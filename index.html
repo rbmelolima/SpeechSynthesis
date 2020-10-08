@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpeechSynthesis</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>SpeechSynthesis</h1>
+  </header>
+
+  <main>
+    <section>
+      <textarea name="text" id="text" placeholder="Insira o seu texto aqui" oninput="setText(event)"></textarea>
+
+      <div class="group-button">
+        <button class="waves-effect blue darken-1 btn-large" onclick="play()">Play</button>
+        <button class="waves-effect amber darken-2 btn-large" onclick="pause()">Pause</button>
+        <button class="waves-effect red darken-3 btn-large" onclick="stop()">Stop</button>
+      </div>
+      </textarea>
+    </section>
+  </main>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
