@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 html {
@@ -20,9 +20,11 @@ h1 {
   margin-bottom: 48px;
   font-weight: bold;
   color: #fff;
+  font-size: 32px;
 }
 
 main {
+  width: 100%;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -36,7 +38,7 @@ textarea {
 
   height: 320px;
   min-height: 320px;
-  
+
   padding: 16px;
   resize: vertical;
   margin-bottom: 24px;
@@ -46,16 +48,32 @@ textarea {
   color: #fff;
 }
 
-textarea:focus{
+textarea:focus {
   border-color: dodgerblue;
 }
 
 .group-button {
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  display: block;  
 }
 
 .group-button button {
-  margin-right: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+@media (min-width: 420px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .group-button {    
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .group-button button {
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
 }
