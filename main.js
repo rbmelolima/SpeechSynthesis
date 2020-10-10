@@ -3,7 +3,7 @@ const utterance = new SpeechSynthesisUtterance();
 const synth = window.speechSynthesis;
 
 utterance.lang = "pt-BR";
-utterance.rate = 1.2;
+utterance.rate = 1.0;
 
 function setText(event) {
   utterance.text = event.target.value;
