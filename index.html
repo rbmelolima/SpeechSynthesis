@@ -17,15 +17,16 @@
 
 <body>
   <header>
-    <h1>SpeechSynthesis</h1>
+    <h1>Reprodutor de som online</h1>
   </header>
 
   <main>
     <section>
       <form action="">
-        <textarea name="text" id="text" placeholder="Insira seu texto aqui para ser reproduzido. Aumente o volume :)" oninput="setText(event)"></textarea>
+        <textarea name="text" id="text" placeholder="Insira seu texto aqui para ser reproduzido. Aumente o volume :)"
+          oninput="setText(event)"></textarea>
 
-        <button class="btn-reset waves-effect grey lighten-5" type="reset"> CLEAN </button>
+        <button class="btn-reset waves-effect grey lighten-5" type="reset" onclick="clean()"> CLEAN </button>
       </form>
 
       <div class="group-button">
@@ -35,8 +36,6 @@
       </div>
     </section>
   </main>
-
-
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

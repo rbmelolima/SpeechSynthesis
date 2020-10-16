@@ -5,10 +5,6 @@ const synth = window.speechSynthesis;
 utterance.lang = "pt-BR";
 utterance.rate = 1.0;
 
-function setText(event) {
-  utterance.text = event.target.value;
-}
-
 function play() {
   if(speechSynthesis.paused) {
     speechSynthesis.resume();
@@ -19,11 +15,10 @@ function play() {
   }
 }
 
-function stop() {
-  speechSynthesis.cancel();
-}
+const stop = () => speechSynthesis.cancel();
 
-function pause() {
-  speechSynthesis.pause();
-}
+const pause = () => speechSynthesis.pause();
 
+const clean = () => utterance.text = "";
+
+const setText = (event) => utterance.text = event.target.value;
